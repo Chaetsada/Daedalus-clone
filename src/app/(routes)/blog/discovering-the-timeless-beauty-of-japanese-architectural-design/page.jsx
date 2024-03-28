@@ -6,8 +6,9 @@ import React from "react";
 import { blogData as data } from "@/app/lib/data";
 import { usePathname } from "next/navigation";
 
+
 const page = () => {
-  const pathName = usePathname();
+  const path = usePathname();
   return (
     <div className="min-h-screen">
       <div className="container pt-[170px] px-5 flex flex-col gap-10">
@@ -18,7 +19,7 @@ const page = () => {
                 <Link href={item.link} className="flex flex-col gap-3">
                   <div
                     className={`w-full h-[2px]  relative ${
-                      pathName == item.link ? "bg-black" : "bg-secondary-200"
+                      path == item.link ? "bg-black" : "bg-secondary-200"
                     }`}
                   >
                     <div className="absolute z-10 left-0 top-0 h-[2px] opacity-5 w-0 bg-black transition-all duration-500 group-hover:opacity-100 group-hover:w-full" />
