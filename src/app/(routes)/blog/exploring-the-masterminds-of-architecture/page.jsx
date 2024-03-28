@@ -3,11 +3,36 @@ import Footer from "@/app/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { blogData as data } from "@/app/lib/data";
-import { usePathname } from "next/navigation";
+const data = [
+  {
+    tag: "PEOPLE",
+    name: "ARCHITECTURAL MARVELS YOU MUST VISIT BEFORE YOU DIE",
+    link: "/blog/architectural-marvels-you-must-visit-before-you-die",
+  },
+  {
+    tag: "PEOPLE",
+    name: "FRANK LLOYD WRIGHT: A LEGEND OF ARCHITECTURAL DESIGN",
+    link: "/blog/frank-lloyd-wright-a-master-of-architectural-design",
+  },
 
+  {
+    tag: "ARCHITECTURE",
+    name: `DUBAI'S ARCHITECTURE: A FUSION OF INNOVATION AND EXTRAVAGANCE`,
+    link: "/blog/dubai-s-architecture-a-fusion-of-innovation-and-extravagance",
+  },
+
+  {
+    tag: "ARCHITECTURE",
+    name: "DISCOVERING THE TIMELESS BEAUTY OF JAPANESE ARCHITECTURAL DESIGN",
+    link: "/blog/discovering-the-timeless-beauty-of-japanese-architectural-design",
+  },
+  {
+    tag: "PEOPLE",
+    name: "SUSTAINABLE AND ENVIRONMENTAL ARCHITECTURAL DESIGN: SHAPING A GREENER FUTURE",
+    link: "/blog/sustainable-and-environmental-architectural-design-shaping-a-greener-future",
+  },
+];
 const page = () => {
-  const path = usePathname();
   return (
     <div className="min-h-screen">
       <div className="container pt-[170px] px-5 flex flex-col gap-10">
@@ -16,11 +41,7 @@ const page = () => {
             {data.map((item, i) => (
               <div key={i} className="group">
                 <Link href={item.link} className="flex flex-col gap-3">
-                  <div
-                    className={`w-full h-[2px]  relative ${
-                      path == item.link ? "bg-black" : "bg-secondary-200"
-                    }`}
-                  >
+                  <div className="w-full h-[2px] bg-secondary-200 relative">
                     <div className="absolute z-10 left-0 top-0 h-[2px] opacity-5 w-0 bg-black transition-all duration-500 group-hover:opacity-100 group-hover:w-full" />
                   </div>
                   <p className="text-xs text-gray-500">{item.tag}</p>

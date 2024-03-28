@@ -1,38 +1,3 @@
-//ASIDE DATA EACH BLOG POST
-export const blogData = [
-  {
-    tag: "PEOPLE",
-    name: "ARCHITECTURAL MARVELS YOU MUST VISIT BEFORE YOU DIE",
-    link: "/blog/architectural-marvels-you-must-visit-before-you-die",
-  },
-  {
-    tag: "PEOPLE",
-    name: "FRANK LLOYD WRIGHT: A LEGEND OF ARCHITECTURAL DESIGN",
-    link: "/blog/frank-lloyd-wright-a-master-of-architectural-design",
-  },
-  {
-    tag: "PEOPLE",
-    name: "EXPLORING THE MASTERMINDS OF ARCHITECTURE",
-    link: "/blog/exploring-the-masterminds-of-architecture",
-  },
-
-  {
-    tag: "ARCHITECTURE",
-    name: `DUBAI'S ARCHITECTURE: A FUSION OF INNOVATION AND EXTRAVAGANCE`,
-    link: "/blog/dubai-s-architecture-a-fusion-of-innovation-and-extravagance",
-  },
-
-  {
-    tag: "ARCHITECTURE",
-    name: "DISCOVERING THE TIMELESS BEAUTY OF JAPANESE ARCHITECTURAL DESIGN",
-    link: "/blog/discovering-the-timeless-beauty-of-japanese-architectural-design",
-  },
-  {
-    tag: "PEOPLE",
-    name: "SUSTAINABLE AND ENVIRONMENTAL ARCHITECTURAL DESIGN: SHAPING A GREENER FUTURE",
-    link: "/blog/sustainable-and-environmental-architectural-design-shaping-a-greener-future",
-  },
-];
 //ABOUT PAGE
 export const projects = [
   {
